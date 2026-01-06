@@ -45,8 +45,8 @@ def main():
         <meta property="og:title" content="Termos de Uso e Privacidade - São Luís" />
         <meta property="og:description" content="Política de privacidade e termos de uso da Prefeitura Municipal de São Luís" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="YOUR_DEPLOYED_URL" />
-        <meta property="og:image" content="IMAGE_URL" />
+        <meta property="og:url" content="https://priv-meta-semus.streamlit.app/" />
+        <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROlNu95d30hgxUwy_QnTCThGfTxSu0yqZIZA&s" />
         """, unsafe_allow_html=True)
     
     # Conteúdo
