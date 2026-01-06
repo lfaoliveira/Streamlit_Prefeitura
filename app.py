@@ -6,16 +6,18 @@ import streamlit as st
 def main():
     # Cabeçalho
     st.title("Termos de Uso & Política de Privacidade")
+    st.header("UF: Maranhão")
+    st.header("PRefeitura de São Luís")
+
     st.subheader("Prefeitura Municipal de São Luís")
     
     # Configuração da página
     st.set_page_config(
         page_title="Termos de Uso e Privacidade - São Luís",
-        page_icon="🛡️",
+        page_icon="",
         layout="centered"
     )
 
-    # Estilização CSS para melhorar a leitura
     st.markdown("""
         <style>
         .main {
@@ -38,6 +40,7 @@ def main():
         }
         </style>
         """, unsafe_allow_html=True)
+
     st.markdown("""
         <meta property="og:title" content="Termos de Uso e Privacidade - São Luís" />
         <meta property="og:description" content="Política de privacidade e termos de uso da Prefeitura Municipal de São Luís" />
@@ -45,9 +48,7 @@ def main():
         <meta property="og:url" content="YOUR_DEPLOYED_URL" />
         <meta property="og:image" content="IMAGE_URL" />
         """, unsafe_allow_html=True)
-
-    st.divider()
-
+    
     # Conteúdo
     st.markdown("""
     ### Termos e Condições de Uso
@@ -127,9 +128,9 @@ def main():
     **Endereço:** Avenida do Vale, nº 13 – Renascença II – Edifício Zircônio – Salas 102 a 110  
     **Data de vigência:** 10/12/2024
     """)
-
     # Rodapé
     st.markdown('<div class="footer">© 2026 Prefeitura de São Luís - Secretaria Municipal de Informação e Tecnologia (SEMIT)</div>', unsafe_allow_html=True)
+    st.caption("Desenvolvido pela Secretaria Municipal de Informação e Tecnologia para a SEMUS")
 
 if __name__ == "__main__":
     main()
