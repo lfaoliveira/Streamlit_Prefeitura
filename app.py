@@ -1,41 +1,51 @@
 import streamlit as st
 
-# Configuração da página
-st.set_page_config(
-    page_title="Termos de Uso e Privacidade - São Luís",
-    page_icon="🛡️",
-    layout="centered"
-)
 
-# Estilização CSS para melhorar a leitura
-st.markdown("""
-    <style>
-    .main {
-        background-color: #ffffff;
-    }
-    .stMarkdown {
-        text-align: justify;
-        line-height: 1.6;
-    }
-    h1, h2, h3 {
-        color: #1E3A8A; /* Azul institucional */
-    }
-    .footer {
-        font-size: 12px;
-        color: gray;
-        text-align: center;
-        margin-top: 50px;
-        padding: 20px;
-        border-top: 1px solid #eee;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+
 
 def main():
     # Cabeçalho
     st.title("Termos de Uso & Política de Privacidade")
     st.subheader("Prefeitura Municipal de São Luís")
     
+    # Configuração da página
+    st.set_page_config(
+        page_title="Termos de Uso e Privacidade - São Luís",
+        page_icon="🛡️",
+        layout="centered"
+    )
+
+    # Estilização CSS para melhorar a leitura
+    st.markdown("""
+        <style>
+        .main {
+            background-color: #ffffff;
+        }
+        .stMarkdown {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #1E3A8A; /* Azul institucional */
+        }
+        .footer {
+            font-size: 12px;
+            color: gray;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+    st.markdown("""
+        <meta property="og:title" content="Termos de Uso e Privacidade - São Luís" />
+        <meta property="og:description" content="Política de privacidade e termos de uso da Prefeitura Municipal de São Luís" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="YOUR_DEPLOYED_URL" />
+        <meta property="og:image" content="IMAGE_URL" />
+        """, unsafe_allow_html=True)
+
     st.divider()
 
     # Conteúdo
