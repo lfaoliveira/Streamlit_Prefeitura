@@ -1,8 +1,5 @@
 import streamlit as st
 
-
-
-
 def main():
     # Cabeçalho
     st.title("Termos de Uso & Política de Privacidade")
